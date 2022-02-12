@@ -26,6 +26,54 @@ public class Registro implements Serializable {
     @Id
     String data;
 
+    public String getCocho() {
+        return cocho;
+    }
+
+    public void setCocho(String cocho) {
+        this.cocho = cocho;
+    }
+
+    public String getQuant_inical() {
+        return quant_inical;
+    }
+
+    public void setQuant_inical(String quant_inical) {
+        this.quant_inical = quant_inical;
+    }
+
+    public String getQuant_final() {
+        return quant_final;
+    }
+
+    public void setQuant_final(String quant_final) {
+        this.quant_final = quant_final;
+    }
+
+    public String getPorcentagem() {
+        return porcentagem;
+    }
+
+    public void setPorcentagem(String porcentagem) {
+        this.porcentagem = porcentagem;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(String aluno) {
+        this.aluno = aluno;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,13 +85,5 @@ public class Registro implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(aluno, cocho, quant_inical, quant_final, porcentagem, data);
-    }
-
-    public String getAluno() {
-        return aluno;
-    }
-
-    public void setAluno(String aluno) {
-        this.aluno = aluno;
     }
 }
