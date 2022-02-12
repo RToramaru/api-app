@@ -18,13 +18,21 @@ public class Registro implements Serializable {
     @Id
     String cocho;
     @Id
-    String quant_inical;
+    String quant_inicial;
     @Id
     String quant_final;
     @Id
     String porcentagem;
     @Id
     String data;
+
+    public String getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(String aluno) {
+        this.aluno = aluno;
+    }
 
     public String getCocho() {
         return cocho;
@@ -34,12 +42,12 @@ public class Registro implements Serializable {
         this.cocho = cocho;
     }
 
-    public String getQuant_inical() {
-        return quant_inical;
+    public String getQuant_inicial() {
+        return quant_inicial;
     }
 
-    public void setQuant_inical(String quant_inical) {
-        this.quant_inical = quant_inical;
+    public void setQuant_inicial(String quant_inicial) {
+        this.quant_inicial = quant_inicial;
     }
 
     public String getQuant_final() {
@@ -66,24 +74,16 @@ public class Registro implements Serializable {
         this.data = data;
     }
 
-    public String getAluno() {
-        return aluno;
-    }
-
-    public void setAluno(String aluno) {
-        this.aluno = aluno;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Registro registro = (Registro) o;
-        return aluno.equals(registro.aluno) && cocho.equals(registro.cocho) && quant_inical.equals(registro.quant_inical) && quant_final.equals(registro.quant_final) && porcentagem.equals(registro.porcentagem) && data.equals(registro.data);
+        return aluno.equals(registro.aluno) && cocho.equals(registro.cocho) && quant_inicial.equals(registro.quant_inicial) && quant_final.equals(registro.quant_final) && porcentagem.equals(registro.porcentagem) && data.equals(registro.data);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(aluno, cocho, quant_inical, quant_final, porcentagem, data);
+        return Objects.hash(aluno, cocho, quant_inicial, quant_final, porcentagem, data);
     }
 }
