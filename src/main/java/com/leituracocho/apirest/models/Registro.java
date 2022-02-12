@@ -56,12 +56,12 @@ public class Registro implements Serializable {
         this.cocho = cocho;
     }
 
-    public double getQaunt_inical() {
+    public double getQuant_inical() {
         return quant_inical;
     }
 
-    public void setQuant_inical(double qaunt_inical) {
-        this.quant_inical = qaunt_inical;
+    public void setQuant_inical(double quant_inical) {
+        this.quant_inical = quant_inical;
     }
 
     public double getQuant_final() {
